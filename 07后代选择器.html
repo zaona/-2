@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		/*后代选择器的作用就是选择父元素的子元素定义样式
+		发生的前提是嵌套关系
+		1  父元素在前，子元素在后
+		2  后代选择器可以无限制的隔代
+		3  只要能代表父元素，子元素，后代选择器可以是任意选择器的组合
+		*/
+		div.father .grandson {
+			font-size: 100px;
+			color: red;
+		}
+	</style>
+</head>
+<body>
+	<div class="father">
+		<p class="son">
+			<span class="grandson">几个字</span>
+		</p>
+		<span>么么哒</span>
+	</div>
+	<span>呵呵哒</span>
+</body>
+</html>
